@@ -21,18 +21,16 @@ body {
 }
 
 .card {
-  height: 400px;
-  width: 800px;
+  height: 450px;
+  width: 797px;
   display: flex;
+  margin-top: 100px;
 
   &__wallet {
     width: 297px;
     background-color: #f2f2f2;
     height: 450px;
-    margin-top: 100px;
     margin-left: 40px;
-    // padding-top: 38px;
-    // padding-left: 36px;
     padding: 39px 39px 0 36px;
     position: relative;
 
@@ -43,7 +41,6 @@ body {
     height: 450px;
     width: 500px;
     background-color: #fff;
-    margin-top: 100px;
     padding-top: 39px;
     padding-left: 50px;
     padding-right: 3px;
@@ -72,7 +69,7 @@ body {
 
 .card-debit:hover,
 .card-debit:active {
-  border: 3px solid #8793C6;
+  border: 3px solid #8793c6;
 }
 
 .card-balance__top {
@@ -126,9 +123,11 @@ body {
 
 input {
   display: none;
-  border: 3px solid #8793C6;
 }
 
+input:checked + label {
+  border: 3px solid #8793c6;
+}
 
 .payment-history {
   display: flex;
@@ -144,17 +143,17 @@ input {
 
   &__text {
     font-weight: 500;
-    color: #C6C6C6;
+    color: #c6c6c6;
     font-size: 14px;
   }
 
   &__sum {
     font-weight: 700;
     font-size: 16px;
-    color: #8898C6;
+    color: #8898c6;
 
     &--active {
-      color: #8BCE5F;
+      color: #8bce5f;
     }
   }
 }
